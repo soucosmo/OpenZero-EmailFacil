@@ -69,12 +69,19 @@ $email->Assunto('Coloque aqui o assunto do email');
 Agora vamos colocar a mensagem:
 $email->Mensagem('Coloque aqui a sua mensagem');
 
+Se você quiser ou precisar enviar algum arquivo basta usar a função a seguir:
+
+arquivo sem nome
+$email->Arquivo('Coloque aqui o link local ou remoto do arquivo');
+
+arquivo com nome
+$email->Arquivo('Coloque aqui o link local ou remoto do arquivo', 'Coloque aqui o nome o seu arquivo');
 
 Terminando isso, falta agora o passo mais importante de todos.. Vamos confirmar o envio!
 
 7 - Confirmando o Envio da Mensagem:
 $email->Enviar();
 para saber se o seu email foi enviado ou não, basta fazer isso echo $email->Enviar();
-se o email for feito com sucesso, vai aparecer TRUE ou 1 para envio de email comum e uma mensagem de sucesso para email SMTP
+se o email for feito com sucesso, vai aparecer TRUE ou 1 para envio de email comum e uma mensagem de SUCESSO para email SMTP
 
 Dúvidas? visite: www.openzero.com.br
