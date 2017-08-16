@@ -9,7 +9,7 @@ Para usar a classe em seu sistema siga estes passos
 Você pode usar o git se desejar: https://github.com/cosmo9able/OpenZero-EmailFacil
 ou você pode simplesmente fazer o download de uma cópia em zip
 
-
+<br><br><br><br><br><br><br><br><br><br>
 
 
 2 - Faça a inclusão da do autoload no arquivo do seu projeto
@@ -28,8 +28,7 @@ $email = new EmailFacil(true);
 observe que se você desejar usar SMTP você deve passar o valor TRUE como parametros, para enviar emails normais use apenas $email = new Email; (esta modalidade não é muito recomendada)
 
 
-
-
+<br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -43,7 +42,7 @@ caso o contrário ela não precisa ser chamada.
 
 
 
-
+<br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -67,45 +66,55 @@ aqui finalizamos a configuração de conexão SMTP, vamos agora enviar nosso ema
 
 
 
-
-
+<br><br><br><br><br><br><br><br><br><br>
 
 
 
 
 
 6 - Este passo é o mais simples e serve para emails comum e SMTP, vamos configurar o remetente, destinario, assunto e mensagem ;)
-
-Remetente sem nome:
+<br><br>
+Remetente sem nome:<br>
 $email->De('coloque aqui o seu email como remetente');
 
-Remetente com nome
+
+Remetente com nome:<br>
 $email->De('coloque aqui o seu email como remetente', 'Coloque aqui o nome do seu email');
 
+<br><br><br><br><br><br><br><br><br><br>
 
-
-Destinatario sem nome:
+Destinatario sem nome:<br>
 $email->Para('coloque aqui o email da pessoa que vai receber');
+<br><br>
 
-Destinatario com nome:
+Destinatario com nome:<br>
 $email->Para('coloque aqui o email da pessoa que vai receber', 'Coloque aqui o nome da pessoa que vai receber');
+<br><br>
 
-Agora vamos colocar o assunto o email:
+
+Agora vamos colocar o assunto o email:<br>  
 $email->Assunto('Coloque aqui o assunto do email');
+<br><br>
 
-Agora vamos colocar a mensagem:
+
+Agora vamos colocar a mensagem:<br>
 $email->Mensagem('Coloque aqui a sua mensagem');
+<br><br>
+
 
 Se você quiser ou precisar enviar algum arquivo basta usar a função a seguir:
 
-arquivo sem nome
+arquivo sem nome:<br>
 $email->Arquivo('Coloque aqui o link local ou remoto do arquivo');
+<br><br>
 
-arquivo com nome
+
+arquivo com nome:<br>
 $email->Arquivo('Coloque aqui o link local ou remoto do arquivo', 'Coloque aqui o nome o seu arquivo');
-
+<br><br>
 Terminando isso, falta agora o passo mais importante de todos.. Vamos confirmar o envio!
 
+<br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -120,14 +129,13 @@ Terminando isso, falta agora o passo mais importante de todos.. Vamos confirmar 
 
 
 
-
-7 - Confirmando o Envio da Mensagem:
-$email->Enviar();
-para saber se o seu email foi enviado ou não, basta fazer isso echo $email->Enviar();
+7 - Confirmando o Envio da Mensagem:<br><br>
+$email->Enviar();<br><br>
+para saber se o seu email foi enviado ou não, basta fazer isso echo $email->Enviar();<br><br>
 se o email for feito com sucesso, vai aparecer TRUE ou 1 para envio de email comum e uma mensagem de SUCESSO para email SMTP
 
 
-
+<br><br>
 
 
 
